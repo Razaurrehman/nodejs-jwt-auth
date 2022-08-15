@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-jwt-auth",
+  "version": "1.0.0",
+  "description": "Nodejs + MongoDB + JWT Authentication & Authorization",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Razaurrehman/nodejs-jwt-auth.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "mongodb",
+    "bodyparser"
+  ],
+  "author": "Raza Ur Rehman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Razaurrehman/nodejs-jwt-auth/issues"
+  },
+  "homepage": "https://github.com/Razaurrehman/nodejs-jwt-auth#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2"
+  }
+}
