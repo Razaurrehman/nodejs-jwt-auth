@@ -36,6 +36,10 @@ db.mongoose
     process.exit();
   });
 
+db.sequelize.sync({ force: true }).then(() => {
+   console.log("Drop and re-sync db.");
+});
+
 function initial() {
     Role.estimatedDocumentCount((err, count) => {
         if (!err && count === 0) {
@@ -69,6 +73,7 @@ function initial() {
 
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
+require("./routes/tutorial.routes")(app);
 
 const PORT = process.env.PORT || 8081;
 
