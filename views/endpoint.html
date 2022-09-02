@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style> </style>
+      <title>Test</title>
+      <script src="..."></script>
+   </head>
+    <body>
+        <div class="constainer">
+            <h2>API Routes</h2>
+            <h3>Base URL</h3>
+                <p>http://localhost:8081</p>
+            <h3>DataBase</h3>
+                <p>PostgreSQL</p>
+                <p>MongoDB</p>
+            <h3>Authentication</h3>
+                <p>POST /api/auth/signin</p>
+                <p>POST /api/auth/signup</p>
+                <p>POST /api/auth/refreshtoken</p>
+            <h3>User</h3>
+                <p>GET /api/test/all</p>
+                <p>GET /api/test/user</p>
+                <p>GET /api/test/mod</p>
+                <p>GET /api/test/admin</p>
+            <h3>Tutorials</h3>
+                <p>GET /api/tutorials</p>
+                <p>POST /api/tutorials</p>
+                <p>GET /api/tutorials/published</p>
+                <p>GET /api/tutorials/:id</p>
+                <p>PUT /api/tutorials/:id</p>
+                <p>DELETE /api/tutorials</p>
+        </div>
+    </body>
+</html>
+
+<style>
+    .constainer {
+        width: calc(100vw - 16px);
+        margin: 16px;
+    }
+</style>

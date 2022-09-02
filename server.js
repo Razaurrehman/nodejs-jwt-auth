@@ -3,6 +3,7 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const db = require("./models");
 const dbConfig = require("./config/db.config");
+var path = require('path');
 const app = express();
 
 
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // simple route
 app.get("/" , (request, response) => {
-    response.json({message: "welcome to backend API's"})
+    response.sendFile('views/endpoint.html', {root: __dirname })
 })
 
 
